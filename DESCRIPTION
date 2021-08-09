@@ -1,0 +1,21 @@
+Package: SNA4DSData
+Title: Datasets for the SNA4DS course
+Version: 0.9.9000
+Authors@R:
+	c(person(given = "Roger",
+					family = "Leenders",
+					role = c("aut", "cre"),
+					email = "SNA4DS@jads.nl"),
+	  person(given = "Claudia",
+					family = "Zucca",
+					role = c("aut"),
+					email = "SNA4DS@jads.nl"))
+Maintainer: Roger Leenders <r.t.a.j.leenders@jads.nl>
+Description: Contains datasets for the SNA4DS course.
+Depends: R (>= 3.5.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: bzip2
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1

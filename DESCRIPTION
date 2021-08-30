@@ -12,7 +12,7 @@ Authors@R:
 					email = "SNA4DS@jads.nl"))
 Maintainer: Roger Leenders <r.t.a.j.leenders@jads.nl>
 Description: Contains datasets for the SNA4DS course.
-Depends: R (>= 3.5.0)
+Depends: R (>= 4.1.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

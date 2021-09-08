@@ -18,6 +18,10 @@ routers network
 }
 \details{
 routers network, in \code{igraph}-format. The network is known as RL-CAIDA.
+This represents the structure of the internet (well, a snapshot of a
+small part of it).
+
+190914 routers linked by 607610 undirected edges.
 }
 \references{
 Ryan A. Rossi, Sonia Fahmy, and Nilothpal Talukder, 2013,

@@ -15,12 +15,12 @@ attributes.
 data(florentine)
 }
 \description{
-Network data of Florentine families, in \code{igraph} format.
+Network data of 16 Florentine families, in \code{igraph} format.
 }
 \details{
 A list containing two networks and a data.frame with attributes.
 
-This is a data set of marriage and business ties among Renaissance Florentine
+This is a data set of 1520 marriage and 15 business ties among Renaissance Florentine
 families. The data is originally from Padgett (1994) via UCINET and stored
 as an \code{igraph} object.
 

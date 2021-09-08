@@ -1,9 +1,54 @@
 
+
+
+#' blogosphere
+#'
+#' blogosphere network
+#'
+#' blogosphere network, in \code{igraph}-format.
+#'
+#' The network consists of 1490 blogsites connected by 19090 directed edges
+#' (one blogsite linking to another).
+#'
+#' The vertex attributes are
+#' \itemize{
+#' \item{id}{id of the blogsite}
+#' \item{label}{url of the blog}
+#' \item{value}(numeric, political preference of the blog: 0 for liberal/democrat, 1 for conservative/republican)
+#' \item{source}{character, weblog directories}
+#' \item{party}{character, "liberal" or "conservative"}
+#' \item{color}{character, "blue" for liberal, "red" for conservative}
+#' }
+#'
+#' The edge attributes are
+#' \itemize{
+#' \item{within}{logical, whether the edge connects two blogs with the same political point-of-view}
+#' \item{within_republican}{logical, whether the edge connects two republican blogsites}
+#' \item{within_democrat}(logical, whether the edge connects two democratic blogsites)
+#' }
+#'
+#' Note: there are loops, since some blogs refer to themselves.
+#'
+#' @usage data(blogosphere)
+#' @name blogosphere
+#' @docType data
+#' @references,
+#' Lada Adamic & Natalie Glance, The political blogosphere and the 2004 U.S.
+#' election: Divided they blog, 2005, LinkeKDD '05: Proceedings of the 3rd
+#' international workshop op Link discovery.
+#' @keywords datasets
+NULL
+
+
+
+
 #' elegans network data
 #'
 #' elegans network
 #'
-#' elegans network, in \code{igraph}-format. 
+#' elegans network, in \code{igraph}-format.
+#' Neural network of the nematode Caenorhabditis Elegans.
+#' So, nodes are neurons, links are outgoing or incoming synapses.
 #'
 #' @usage data(elegans)
 #' @docType data
@@ -12,8 +57,8 @@
 #' @format A data frame with 297 vertices and 2344 edges. Directed, Weighted.
 #' @source \url{http://networkrepository.com/celegansneural.php}
 #' @references
-#' White JG, Southgate E, Thomson JN and S Brenner, 1986, 
-#' The structure of the nervous system of the nematode Caenorhabditis elegans, 
+#' White JG, Southgate E, Thomson JN and S Brenner, 1986,
+#' The structure of the nervous system of the nematode Caenorhabditis elegans,
 #' Philos Trans R Soc Lond B Biol Sci., pages 1-340.
 NULL
 
@@ -27,14 +72,14 @@ NULL
 #'
 #' enron network
 #'
-#' enron network, in \code{igraph}-format. 
+#' enron network, in \code{igraph}-format.
 #'
-#' The network consists of 321917 emails sent between employees of Enron between
-#' 1999 and 2003. Nodes in the network are individual employees and edges are
-#' individual emails.  Edges are directed and weighted. The direction is from
-#' the sender to the receiver and the weight represents the number of messages.
-#' It is possible to send an email to oneself, and thus this network contains
-#' loops.
+#' The network consists of 321917 emails sent between 87272 employees of Enron
+#' between 1999 and 2003. Nodes in the network are individual employees and
+#' edges are individual emails.  Edges are directed and weighted. The direction
+#' is from the sender to the receiver and the weight represents the number of
+#' messages. It is possible to send an email to oneself, and thus this network
+#' contains loops.
 #'
 #' The edges have a weight attribute.
 #'
@@ -45,13 +90,13 @@ NULL
 #' @name enron
 #' @docType data
 #' @source \url{http://konect.cc/networks/enron/} and \url{http://www.cs.cmu.edu/~enron/}
-#' @references, 
-#' Jerome Kunegis, 2013, 
-#' KONECT – The Koblenz Network Collection,
+#' @references,
+#' Jerome Kunegis, 2013,
+#' KONECT--The Koblenz Network Collection,
 #' Proc. Int. Conf. on World Wide Web Companion, pages 1343-1350.
-#' 
+#'
 #' B. Klimmt, Y. Yang, 2004, Introducing the Enron corpus,
-#' Proc. Eur. Conf. on Mach. Learn., pages 217–-226.
+#' Proc. Eur. Conf. on Mach. Learn., pages 217-226.
 #'
 #' @keywords datasets
 NULL
@@ -62,11 +107,11 @@ NULL
 
 #' Florentine families
 #'
-#' Network data of Florentine families, in \code{igraph} format.
+#' Network data of 16 Florentine families, in \code{igraph} format.
 #'
 #' A list containing two networks and a data.frame with attributes.
 #'
-#' This is a data set of marriage and business ties among Renaissance Florentine
+#' This is a data set of 1520 marriage and 15 business ties among Renaissance Florentine
 #' families. The data is originally from Padgett (1994) via UCINET and stored
 #' as an \code{igraph} object.
 #'
@@ -109,7 +154,7 @@ NULL
 #'
 #' ia_enron network
 #'
-#' ia_enron network, in \code{igraph}-format. 
+#' ia_enron network, in \code{igraph}-format.
 #'
 #' @format 143 vertices and 622 edges. Directed, Weighted.
 #' @keywords datasets
@@ -124,7 +169,10 @@ NULL
 #'
 #' enwiki network
 #'
-#' enwiki network, in \code{igraph}-format. 
+#' enwiki network, in \code{igraph}-format.
+#' The nodes are Wikipedia articles about math in the English language.
+#' Only links between Wikipedia articles are considered, links with external
+#' articles are disregarded.
 #'
 #' @keywords datasets
 #' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
@@ -140,17 +188,22 @@ NULL
 #'
 #' everglades network
 #'
-#' everglades network, in \code{igraph}-format. 
+#' everglades network, in \code{igraph}-format.
+#' This is a foodweb of species in the Florida Everglades.
+#' A directed link goes from a prey to a predator species.
+#' The weight of an edge represents the energy flux between the two species.
+#'
+#' There are 69 nodes and 915 edges.
 #'
 #' eco-florida also exists and is slightly larger
 #'
 #' @source \url{http://networkrepository.com/eco-everglades.php}
 #' @references
-#' Ulanowicz, Robert E and DeAngelis, Donald L., 1998, 
-#' Network analysis of trophic dynamics in south florida ecosystems, 
+#' Ulanowicz, Robert E and DeAngelis, Donald L., 1998,
+#' Network analysis of trophic dynamics in south florida ecosystems,
 #' FY97: The Florida Bay Ecosystem, 20688-20038.
-#' 
-#' Melian, Carlos J and Bascompte, Jordi, 2004, 
+#'
+#' Melian, Carlos J and Bascompte, Jordi, 2004,
 #' Food web cohesion, Ecology, 85 (2): 352-358.
 #'
 #' @keywords datasets
@@ -166,7 +219,7 @@ NULL
 #'
 #' imdb costars network
 #'
-#' imdb costars network, in \code{igraph}-format. 
+#' imdb costars network, in \code{igraph}-format.
 
 #' An edge is this network is defined as the actors being part of the same movie.
 #' The edge weight attribute reflects the number of collaborations.
@@ -187,19 +240,21 @@ NULL
 #'
 #' Northwestern University Facebook network
 #'
-#' Northwestern University Facebook network, in \code{igraph}-format. 
+#' Northwestern University Facebook network, in \code{igraph}-format.
 #'
 #'  A social friendship network extracted from Facebook consisting of people
-#'  (nodes) with edges representing friendship ties.
+#'  (nodes) with edges representing "friendship" ties.
+#'
+#' There are 10567 Facebook users with 488336 friendship edges between them.
 #'
 #' @source \url{http://networkrepository.com/socfb-Northwestern25.php}
 #' @references
-#' Traud, Amanda L and Mucha, Peter J and Porter, Mason A, 
-#' Social structure of Facebook networks, 2012, 
+#' Traud, Amanda L and Mucha, Peter J and Porter, Mason A,
+#' Social structure of Facebook networks, 2012,
 #' Phys. A, August, 16, 391: 4165-4180.
-#' 
+#'
 #' Traud, Amanda L and Kelsic, Eric D and Mucha, Peter J and Porter, Mason A, 2011,
-#' Comparing Community Structure to Characteristics in Online Collegiate Social Networks, 
+#' Comparing Community Structure to Characteristics in Online Collegiate Social Networks,
 #' SIAM Rev., 53 (3): 526--543
 #'
 #' @keywords datasets
@@ -217,11 +272,15 @@ NULL
 #' routers network
 #'
 #' routers network, in \code{igraph}-format. The network is known as RL-CAIDA.
+#' This represents the structure of the internet (well, a snapshot of a
+#' small part of it).
+#'
+#' 190914 routers linked by 607610 undirected edges.
 #'
 #' @source \url{http://networkrepository.com/tech-RL-caida.php}
 #' @references
-#' Ryan A. Rossi, Sonia Fahmy, and Nilothpal Talukder, 2013, 
-#' A Multi-Level Approach for Evaluating Internet Topology Generators, 
+#' Ryan A. Rossi, Sonia Fahmy, and Nilothpal Talukder, 2013,
+#' A Multi-Level Approach for Evaluating Internet Topology Generators,
 #' IFIP Networking, pages 1-9.
 #'
 #' Spring, Neil and Mahajan, Ratul and Wetherall, David, 2002,
@@ -277,7 +336,7 @@ NULL
 #' of the way the data were collected.
 #' @source \url{http://vlado.fmf.uni-lj.si/pub/networks/data/UciNet/UciData.htm}
 #' @references
-#' Breiger R., Boorman S. and P. Arabie, 1975, 
+#' Breiger R., Boorman S. and P. Arabie, 1975,
 #' An algorithm for clustering relational data with applications to social network analysis and comparison with multidimensional scaling, Journal of Mathematical Psychology, 12: 328-383.
 #'
 #' Sampson, S., 1969, Crisis in a cloister, Unpublished doctoral dissertation, Cornell University.
@@ -303,15 +362,15 @@ NULL
 #' users of the Twitter social media platform in the six weeks prior to the 2010
 #' Congressional midterm elections. This network is particularly interesting
 #' because one mode of communication, retweets, segregates users into two
-#' politically homogeneous communities of likeminded individuals, while mentions
+#' politically homogeneous communities of like-minded individuals, while mentions
 #' form a bridge between the two communities over which users are exposed to
 #' people and information they would not likely select ahead of time.
 #'
 #' Data Source
 #'
-#' The present analysis leverages data collected from the Twitter ‘gardenhose’
+#' The present analysis leverages data collected from the Twitter (gardenhose
 #' API (dev.twitter.com/pages/ streaming_api) between September 14th and
-#' November 1st, 2010 — the run-up to the November 4th U.S. congressional
+#' November 1st, 2010, the run-up to the November 4th U.S. congressional
 #' midterm elections. During the six weeks of data collection we observed
 #' approximately 355 million tweets.
 #'
@@ -321,8 +380,8 @@ NULL
 #' politically relevant hashtag. To identify an appropriate set of political
 #' hashtags and to avoid intro- ducing bias into the sample, we performed a
 #' simple tag co-occurrence discovery procedure. We began by seeding our sample
-#' with the two most popular political hashtags, #p2 (“Progressives 2.0”) and
-#' #tcot (“Top Conservatives on Twitter”). For each seed we identified the set
+#' with the two most popular political hashtags, #p2 (Progressives 2.0) and
+#' #tcot (Top Conservatives on Twitter). For each seed we identified the set
 #' of hashtags with which it co-occurred in at least one tweet, and ranked the
 #' results using the Jaccard coefficient. Thus, when the tweets in which both
 #' seed and hashtag occur make up a large portion of the tweets in which either
@@ -339,7 +398,7 @@ NULL
 #' indicating that information has propagated from A to B. In the mention
 #' network an edge runs from A to B if A mentions B in a tweet, indicating that
 #' information may have propagated from A to B (a tweet mentioning B is visible
-#' in B’s timeline). Both networks therefore represent potential pathways for
+#' in B's timeline). Both networks therefore represent potential pathways for
 #' information to flow between users.
 #'
 #' The retweet network consists of 23,766 non-isolated nodes among a total of
@@ -405,13 +464,15 @@ NULL
 #'
 #' Yeast network
 #'
-#' Yeast network, in \code{igraph}-format. 
+#' Yeast protein network, in \code{igraph}-format, describing interacting proteins.
+#'
+#' There are 1870 proteins with 4480 interactions.
 #'
 #' @keywords datasets
 #' @format A data frame with 1870 vertices and 4480 edges. Undirected, unweighted.
 #' @source \url{http://networkrepository.com/bio-yeast-protein-inter.php}
 #' @references
-#' Jeong, H. and Mason, S.P. and Barabasi, A.L. and Oltvai, Z.N., 2001, 
+#' Jeong, H. and Mason, S.P. and Barabasi, A.L. and Oltvai, Z.N., 2001,
 #' Lethality and centrality in protein networks, arXiv preprint cond-mat0105306.
 #'
 #' @usage data(yeast)

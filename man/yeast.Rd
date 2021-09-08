@@ -17,7 +17,9 @@ data(yeast)
 Yeast network
 }
 \details{
-Yeast network, in \code{igraph}-format.
+Yeast protein network, in \code{igraph}-format, describing interacting proteins.
+
+There are 1870 proteins with 4480 interactions.
 }
 \references{
 Jeong, H. and Mason, S.P. and Barabasi, A.L. and Oltvai, Z.N., 2001,

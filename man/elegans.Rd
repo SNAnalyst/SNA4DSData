@@ -18,6 +18,8 @@ elegans network
 }
 \details{
 elegans network, in \code{igraph}-format.
+Neural network of the nematode Caenorhabditis Elegans.
+So, nodes are neurons, links are outgoing or incoming synapses.
 }
 \references{
 White JG, Southgate E, Thomson JN and S Brenner, 1986,

@@ -236,6 +236,54 @@ NULL
 NULL
 
 
+#' Judges network
+#'
+#' Network of judges from one of the Polish regional courts. Relation indicates
+#' which judges have ruled in at least one case together. This network is
+#' a projection from bipartite network \code{\link{judge_net_bp}}.
+#'
+#' Node attributes include gender and code of division.
+#'
+#' @docType data
+#' @name judge_net
+#'
+#' @format
+#' Object of class igraph of size 40, undirected, with predefined layout.
+#'
+#' @keywords datasets
+#'
+#' @source
+#' Own calculation my Michal Bojanowski, based on \href{https://saos-test.icm.edu.pl}{SAOS}.
+#' Originally published in the \code{isnar} package at \href{https://github.com/mbojan/isnar}{isnar}.
+#'
+NULL
+
+
+#' Bipartite judges--judgments network
+#'
+#' Two-mode network with classes representing judges and judgments from one of
+#' the Polish regional courts. Relation indicates which judges were involved in
+#' each case.
+#'
+#' Node attributes include judges' gender and code of division. Attribute 'type'
+#' indicates classes of nodes, in accordance with igraph representation of
+#' bipartite networks, \code{TRUE} for judges and \code{FALSE} for judgments.
+#'
+#' @docType data
+#' @name judge_net_bp
+#' @keywords datasets
+#'
+#' @format
+#' Object of class igraph of size 1189, undirected, bipartite.
+#'
+#' @source
+#' Own calculation based on \href{https://saos-test.icm.edu.pl}{SAOS}.
+#' Originally published in the \code{isnar} package at \href{https://github.com/mbojan/isnar}{isnar}.
+#'
+NULL
+
+
+
 #' Northwestern University Facebook network
 #'
 #' Northwestern University Facebook network

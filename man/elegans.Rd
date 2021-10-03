@@ -11,7 +11,7 @@ A data frame with 297 vertices and 2344 edges. Directed, Weighted.
 \url{http://networkrepository.com/celegansneural.php}
 }
 \usage{
-data(elegans)
+data(elegans, package = "SNA4DSData")
 }
 \description{
 elegans network

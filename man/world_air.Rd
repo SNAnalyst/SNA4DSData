@@ -8,7 +8,7 @@
 A data frame with 3179 vertices and 18617 edges. Undirected, unweighted.
 }
 \usage{
-data(world_air)
+data(world_air, package = "SNA4DSData")
 }
 \description{
 world air network

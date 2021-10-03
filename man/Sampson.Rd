@@ -15,7 +15,7 @@ of the way the data were collected.
 \url{http://vlado.fmf.uni-lj.si/pub/networks/data/UciNet/UciData.htm}
 }
 \usage{
-data(Sampson)
+data(Sampson, package = "SNA4DSData")
 }
 \description{
 Multiplex, multitime network Of Positive Affection Within A Monastery
@@ -33,7 +33,7 @@ others - most immediately, Nos. 1, 7, 14, 15, and 16. (In the end, only
 Most of the present data are retrospective, collected after the breakup
 occurred. They concern a period during which a new cohort entered the
 monastery near the end of the study but before the major conflict began.
-The exceptions are "liking" data gathered at three times: SAMPLK1 to SAMPLK3 -
+The exceptions are "liking" data gathered at three times: SAMPLK1 to SAMPLK3
 that reflect changes in group sentiment over time (SAMPLK3 was collected in
 the same wave as the data described below). Information about the senior
 monks was not included.

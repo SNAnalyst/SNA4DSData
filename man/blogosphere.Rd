@@ -5,7 +5,7 @@
 \alias{blogosphere}
 \title{blogosphere}
 \usage{
-data(blogosphere)
+data(blogosphere, package = "SNA4DSData")
 }
 \description{
 blogosphere network

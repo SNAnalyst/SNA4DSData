@@ -29,7 +29,7 @@
 #'
 #' Note: there are loops, since some blogs refer to themselves.
 #'
-#' @usage data(blogosphere)
+#' @usage data(blogosphere, package = "SNA4DSData")
 #' @name blogosphere
 #' @docType data
 #' @references,
@@ -50,7 +50,7 @@ NULL
 #' Neural network of the nematode Caenorhabditis Elegans.
 #' So, nodes are neurons, links are outgoing or incoming synapses.
 #'
-#' @usage data(elegans)
+#' @usage data(elegans, package = "SNA4DSData")
 #' @docType data
 #' @name elegans
 #' @keywords datasets
@@ -86,7 +86,7 @@ NULL
 #' Note that there are many versions of the enron dataset available on the
 #' internet.
 #'
-#' @usage data(enron)
+#' @usage data(enron, package = "SNA4DSData")
 #' @name enron
 #' @docType data
 #' @source \url{http://konect.cc/networks/enron/} and \url{http://www.cs.cmu.edu/~enron/}
@@ -102,6 +102,40 @@ NULL
 NULL
 
 
+
+#' FIFA 2006 committee membership network
+#'
+#' FIFA committee membership network in 2006
+#'
+#' Network (in \code{network} format) of co-membership in committees
+#' in FIFA.The vertices are
+#' members of the FIFA committees and the edges represent the whether
+#' the members of the dyad are a member of a least one joint committee.
+#'
+#' This is the network for the year 2006.
+#'
+#' @usage data(fifa2006, package = "SNA4DSData")
+#' @name fifa2006
+#' @docType data
+#' @keywords fifa2006
+NULL
+
+#' FIFA 2015 committee membership network
+#'
+#' FIFA committee membership network in 2015
+#'
+#' Network (in \code{network} format) of co-membership in committees
+#' in FIFA.The vertices are
+#' members of the FIFA committees and the edges represent the whether
+#' the members of the dyad are a member of a least one joint committee.
+#'
+#' This is the network for the year 2015.
+#'
+#' @usage data(fifa2015, package = "SNA4DSData")
+#' @name fifa2015
+#' @docType data
+#' @keywords fifa2015
+NULL
 
 
 
@@ -140,7 +174,7 @@ NULL
 #' Two factions were dominant in this struggle: one revolved around the
 #' infamous Medicis (9), the other around the powerful Strozzis (15).
 #'
-#' @usage data(florentine)
+#' @usage data(florentine, package = "SNA4DSData")
 #' @docType data
 #' @name florentine
 #' @keywords datasets
@@ -158,7 +192,7 @@ NULL
 #'
 #' @format 143 vertices and 622 edges. Directed, Weighted.
 #' @keywords datasets
-#' @usage data(ia_enron)
+#' @usage data(ia_enron, package = "SNA4DSData")
 #' @docType data
 #' @name ia_enron
 NULL
@@ -176,7 +210,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
-#' @usage data(enwiki)
+#' @usage data(enwiki, package = "SNA4DSData")
 #' @docType data
 #' @name enwiki
 NULL
@@ -208,7 +242,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
-#' @usage data(everglades)
+#' @usage data(everglades, package = "SNA4DSData")
 #' @docType data
 #' @name everglades
 NULL
@@ -230,7 +264,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 252999 vertices and 1015187 edges. Undirected, Unweighted.
-#' @usage data(imdb_costars)
+#' @usage data(imdb_costars, package = "SNA4DSData")
 #' @docType data
 #' @name imdb_costars
 NULL
@@ -284,6 +318,39 @@ NULL
 
 
 
+
+
+
+
+#' Louisiana political preferences
+#'
+#' Louisiana political preferences
+#'
+#' These data come from a study on the determinants of presidential
+#' voting behavior in the parishes of Louisiana in 1960.
+#' Here, the dependent variable of interest is the percentage of the voting
+#' electorate who support particular Democratic presidential candidates.
+#'
+#' Several dimensions that are important characteristics of Louisiana parishes
+#' include percentage black, percentage Catholic, the
+#' percentage black political equality, and the percentage urban.
+#' Each of these variables, in the aggregate, can be seen as predictors of
+#' electoral turnout and partisan electoral behavior in presidential elections.
+#'
+#' The network represents contiguity between the counties.
+#'
+#' @keywords datasets
+#' @format A data frame with 64 vertices and 302 edges. Undirected, unweighted.
+#' @usage data(louis, package = "SNA4DSData")
+#' @docType data
+#' @name louis
+NULL
+
+
+
+
+
+
 #' Northwestern University Facebook network
 #'
 #' Northwestern University Facebook network
@@ -307,7 +374,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 10567 vertices and 488336 edges. Undirected, unweighted.
-#' @usage data(northwestern)
+#' @usage data(northwestern, package = "SNA4DSData")
 #' @docType data
 #' @name northwestern
 NULL
@@ -337,7 +404,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 190914 vertices and 607610 edges. Undirected, unweighted.
-#' @usage data(routers)
+#' @usage data(routers, package = "SNA4DSData")
 #' @docType data
 #' @name routers
 NULL
@@ -361,7 +428,7 @@ NULL
 #' Most of the present data are retrospective, collected after the breakup
 #' occurred. They concern a period during which a new cohort entered the
 #' monastery near the end of the study but before the major conflict began.
-#' The exceptions are "liking" data gathered at three times: SAMPLK1 to SAMPLK3 -
+#' The exceptions are "liking" data gathered at three times: SAMPLK1 to SAMPLK3
 #' that reflect changes in group sentiment over time (SAMPLK3 was collected in
 #' the same wave as the data described below). Information about the senior
 #' monks was not included.
@@ -389,7 +456,7 @@ NULL
 #'
 #' Sampson, S., 1969, Crisis in a cloister, Unpublished doctoral dissertation, Cornell University.
 #'
-#' @usage data(Sampson)
+#' @usage data(Sampson, package = "SNA4DSData")
 #' @docType data
 #' @name Sampson
 NULL
@@ -463,7 +530,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 22405 vertices and 77920 edges. Directed, unweighted.
-#' @usage data(twitter)
+#' @usage data(twitter, package = "SNA4DSData")
 #' @docType data
 #' @name twitter
 NULL
@@ -483,7 +550,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 546 vertices and 2781 edges. Undirected, unweighted.
-#' @usage data(us_air)
+#' @usage data(us_air, package = "SNA4DSData")
 #' @docType data
 #' @name us_air
 NULL
@@ -501,7 +568,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 3179 vertices and 18617 edges. Undirected, unweighted.
-#' @usage data(world_air)
+#' @usage data(world_air, package = "SNA4DSData")
 #' @docType data
 #' @name world_air
 NULL
@@ -523,7 +590,7 @@ NULL
 #' Jeong, H. and Mason, S.P. and Barabasi, A.L. and Oltvai, Z.N., 2001,
 #' Lethality and centrality in protein networks, arXiv preprint cond-mat0105306.
 #'
-#' @usage data(yeast)
+#' @usage data(yeast, package = "SNA4DSData")
 #' @docType data
 #' @name yeast
 NULL

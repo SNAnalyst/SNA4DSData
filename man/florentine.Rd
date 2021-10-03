@@ -12,7 +12,7 @@ attributes.
 \url{http://networkdata.ics.uci.edu/netdata/html/florentine.html}
 }
 \usage{
-data(florentine)
+data(florentine, package = "SNA4DSData")
 }
 \description{
 Network data of 16 Florentine families, in \code{igraph} format.

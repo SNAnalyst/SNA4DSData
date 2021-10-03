@@ -8,7 +8,7 @@
 A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
 }
 \usage{
-data(enwiki)
+data(enwiki, package = "SNA4DSData")
 }
 \description{
 enwiki network

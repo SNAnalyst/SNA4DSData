@@ -8,7 +8,7 @@
 \url{http://konect.cc/networks/enron/} and \url{http://www.cs.cmu.edu/~enron/}
 }
 \usage{
-data(enron)
+data(enron, package = "SNA4DSData")
 }
 \description{
 enron network

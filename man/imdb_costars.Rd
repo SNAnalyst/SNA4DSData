@@ -11,7 +11,7 @@ A data frame with 252999 vertices and 1015187 edges. Undirected, Unweighted.
 \url{https://www.imdb.com/}
 }
 \usage{
-data(imdb_costars)
+data(imdb_costars, package = "SNA4DSData")
 }
 \description{
 imdb costars network

@@ -15,7 +15,7 @@ Louisiana political preferences
 }
 \details{
 These data come from a study on the determinants of presidential
-voting behavior in the parishes of Louisiana (1980).
+voting behavior in the parishes of Louisiana in 1960.
 Here, the dependent variable of interest is the percentage of the voting
 electorate who support particular Democratic presidential candidates.
 

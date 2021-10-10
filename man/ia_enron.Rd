@@ -8,7 +8,7 @@
 143 vertices and 622 edges. Directed, Weighted.
 }
 \usage{
-data(ia_enron)
+data(ia_enron, package = "SNA4DSData")
 }
 \description{
 ia_enron network

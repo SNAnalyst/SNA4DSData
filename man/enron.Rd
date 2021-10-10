@@ -8,7 +8,7 @@
 \url{http://konect.cc/networks/enron/} and \url{http://www.cs.cmu.edu/~enron/}
 }
 \usage{
-data(enron)
+data(enron, package = "SNA4DSData")
 }
 \description{
 enron network
@@ -16,12 +16,12 @@ enron network
 \details{
 enron network, in \code{igraph}-format.
 
-The network consists of 321917 emails sent between employees of Enron between
-1999 and 2003. Nodes in the network are individual employees and edges are
-individual emails.  Edges are directed and weighted. The direction is from
-the sender to the receiver and the weight represents the number of messages.
-It is possible to send an email to oneself, and thus this network contains
-loops.
+The network consists of 321917 emails sent between 87272 employees of Enron
+between 1999 and 2003. Nodes in the network are individual employees and
+edges are individual emails.  Edges are directed and weighted. The direction
+is from the sender to the receiver and the weight represents the number of
+messages. It is possible to send an email to oneself, and thus this network
+contains loops.
 
 The edges have a weight attribute.
 
@@ -31,10 +31,10 @@ internet.
 \references{
 ,
 Jerome Kunegis, 2013,
-KONECT – The Koblenz Network Collection,
+KONECT--The Koblenz Network Collection,
 Proc. Int. Conf. on World Wide Web Companion, pages 1343-1350.
 
 B. Klimmt, Y. Yang, 2004, Introducing the Enron corpus,
-Proc. Eur. Conf. on Mach. Learn., pages 217–-226.
+Proc. Eur. Conf. on Mach. Learn., pages 217-226.
 }
 \keyword{datasets}

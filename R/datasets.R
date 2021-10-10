@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 #' Data Science Students
 #'
 #' DSstudents
@@ -13,21 +14,69 @@
 #' @source Data Collected during the SNA4DS course 2021 and modified for anonymization
 #' @references
 #' Zucca, C., 2021, Data Science Students -SNA4DS 2021
+=======
+
+
+#' blogosphere
+#'
+#' blogosphere network
+#'
+#' blogosphere network, in \code{igraph}-format.
+#'
+#' The network consists of 1490 blogsites connected by 19090 directed edges
+#' (one blogsite linking to another).
+#'
+#' The vertex attributes are
+#' \itemize{
+#' \item{id}{id of the blogsite}
+#' \item{label}{url of the blog}
+#' \item{value}(numeric, political preference of the blog: 0 for liberal/democrat, 1 for conservative/republican)
+#' \item{source}{character, weblog directories}
+#' \item{party}{character, "liberal" or "conservative"}
+#' \item{color}{character, "blue" for liberal, "red" for conservative}
+#' }
+#'
+#' The edge attributes are
+#' \itemize{
+#' \item{within}{logical, whether the edge connects two blogs with the same political point-of-view}
+#' \item{within_republican}{logical, whether the edge connects two republican blogsites}
+#' \item{within_democrat}(logical, whether the edge connects two democratic blogsites)
+#' }
+#'
+#' Note: there are loops, since some blogs refer to themselves.
+#'
+#' @usage data(blogosphere, package = "SNA4DSData")
+#' @name blogosphere
+#' @docType data
+#' @references,
+#' Lada Adamic & Natalie Glance, The political blogosphere and the 2004 U.S.
+#' election: Divided they blog, 2005, LinkeKDD '05: Proceedings of the 3rd
+#' international workshop op Link discovery.
+#' @keywords datasets
+>>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 NULL
 
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #' elegans network data
 #'
 #' elegans network
 #'
 #' elegans network, in \code{igraph}-format.
+<<<<<<< HEAD
+=======
+#' Neural network of the nematode Caenorhabditis Elegans.
+#' So, nodes are neurons, links are outgoing or incoming synapses.
+>>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #'
-#' @usage data(elegans)
+#' @usage data(elegans, package = "SNA4DSData")
 #' @docType data
 #' @name elegans
 #' @keywords datasets
@@ -51,44 +100,82 @@ NULL
 #'
 #' enron network, in \code{igraph}-format.
 #'
-#' The network consists of 321917 emails sent between employees of Enron between
-#' 1999 and 2003. Nodes in the network are individual employees and edges are
-#' individual emails.  Edges are directed and weighted. The direction is from
-#' the sender to the receiver and the weight represents the number of messages.
-#' It is possible to send an email to oneself, and thus this network contains
-#' loops.
+#' The network consists of 321917 emails sent between 87272 employees of Enron
+#' between 1999 and 2003. Nodes in the network are individual employees and
+#' edges are individual emails.  Edges are directed and weighted. The direction
+#' is from the sender to the receiver and the weight represents the number of
+#' messages. It is possible to send an email to oneself, and thus this network
+#' contains loops.
 #'
 #' The edges have a weight attribute.
 #'
 #' Note that there are many versions of the enron dataset available on the
 #' internet.
 #'
-#' @usage data(enron)
+#' @usage data(enron, package = "SNA4DSData")
 #' @name enron
 #' @docType data
 #' @source \url{http://konect.cc/networks/enron/} and \url{http://www.cs.cmu.edu/~enron/}
 #' @references,
 #' Jerome Kunegis, 2013,
+<<<<<<< HEAD
 #' KONECT – The Koblenz Network Collection,
+=======
+#' KONECT--The Koblenz Network Collection,
+>>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #' Proc. Int. Conf. on World Wide Web Companion, pages 1343-1350.
 #'
 #' B. Klimmt, Y. Yang, 2004, Introducing the Enron corpus,
-#' Proc. Eur. Conf. on Mach. Learn., pages 217–-226.
+#' Proc. Eur. Conf. on Mach. Learn., pages 217-226.
 #'
 #' @keywords datasets
 NULL
 
 
 
+#' FIFA 2006 committee membership network
+#'
+#' FIFA committee membership network in 2006
+#'
+#' Network (in \code{network} format) of co-membership in committees
+#' in FIFA.The vertices are
+#' members of the FIFA committees and the edges represent the whether
+#' the members of the dyad are a member of a least one joint committee.
+#'
+#' This is the network for the year 2006.
+#'
+#' @usage data(fifa2006, package = "SNA4DSData")
+#' @name fifa2006
+#' @docType data
+#' @keywords fifa2006
+NULL
+
+#' FIFA 2015 committee membership network
+#'
+#' FIFA committee membership network in 2015
+#'
+#' Network (in \code{network} format) of co-membership in committees
+#' in FIFA.The vertices are
+#' members of the FIFA committees and the edges represent the whether
+#' the members of the dyad are a member of a least one joint committee.
+#'
+#' This is the network for the year 2015.
+#'
+#' @usage data(fifa2015, package = "SNA4DSData")
+#' @name fifa2015
+#' @docType data
+#' @keywords fifa2015
+NULL
+
 
 
 #' Florentine families
 #'
-#' Network data of Florentine families, in \code{igraph} format.
+#' Network data of 16 Florentine families, in \code{igraph} format.
 #'
 #' A list containing two networks and a data.frame with attributes.
 #'
-#' This is a data set of marriage and business ties among Renaissance Florentine
+#' This is a data set of 1520 marriage and 15 business ties among Renaissance Florentine
 #' families. The data is originally from Padgett (1994) via UCINET and stored
 #' as an \code{igraph} object.
 #'
@@ -117,7 +204,7 @@ NULL
 #' Two factions were dominant in this struggle: one revolved around the
 #' infamous Medicis (9), the other around the powerful Strozzis (15).
 #'
-#' @usage data(florentine)
+#' @usage data(florentine, package = "SNA4DSData")
 #' @docType data
 #' @name florentine
 #' @keywords datasets
@@ -135,7 +222,7 @@ NULL
 #'
 #' @format 143 vertices and 622 edges. Directed, Weighted.
 #' @keywords datasets
-#' @usage data(ia_enron)
+#' @usage data(ia_enron, package = "SNA4DSData")
 #' @docType data
 #' @name ia_enron
 NULL
@@ -147,10 +234,16 @@ NULL
 #' enwiki network
 #'
 #' enwiki network, in \code{igraph}-format.
+<<<<<<< HEAD
+=======
+#' The nodes are Wikipedia articles about math in the English language.
+#' Only links between Wikipedia articles are considered, links with external
+#' articles are disregarded.
+>>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #'
 #' @keywords datasets
 #' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
-#' @usage data(enwiki)
+#' @usage data(enwiki, package = "SNA4DSData")
 #' @docType data
 #' @name enwiki
 NULL
@@ -163,6 +256,14 @@ NULL
 #' everglades network
 #'
 #' everglades network, in \code{igraph}-format.
+<<<<<<< HEAD
+=======
+#' This is a foodweb of species in the Florida Everglades.
+#' A directed link goes from a prey to a predator species.
+#' The weight of an edge represents the energy flux between the two species.
+#'
+#' There are 69 nodes and 915 edges.
+>>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #'
 #' eco-florida also exists and is slightly larger
 #'
@@ -177,7 +278,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
-#' @usage data(everglades)
+#' @usage data(everglades, package = "SNA4DSData")
 #' @docType data
 #' @name everglades
 NULL
@@ -199,10 +300,91 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 252999 vertices and 1015187 edges. Undirected, Unweighted.
-#' @usage data(imdb_costars)
+#' @usage data(imdb_costars, package = "SNA4DSData")
 #' @docType data
 #' @name imdb_costars
 NULL
+
+
+#' Judges network
+#'
+#' Network of judges from one of the Polish regional courts. Relation indicates
+#' which judges have ruled in at least one case together. This network is
+#' a projection from bipartite network \code{\link{judge_net_bp}}.
+#'
+#' Node attributes include gender and code of division.
+#'
+#' @docType data
+#' @name judge_net
+#'
+#' @format
+#' Object of class igraph of size 40, undirected, with predefined layout.
+#'
+#' @keywords datasets
+#'
+#' @source
+#' Own calculation my Michal Bojanowski, based on \href{https://saos-test.icm.edu.pl}{SAOS}.
+#' Originally published in the \code{isnar} package at \href{https://github.com/mbojan/isnar}{isnar}.
+#'
+NULL
+
+
+#' Bipartite judges--judgments network
+#'
+#' Two-mode network with classes representing judges and judgments from one of
+#' the Polish regional courts. Relation indicates which judges were involved in
+#' each case.
+#'
+#' Node attributes include judges' gender and code of division. Attribute 'type'
+#' indicates classes of nodes, in accordance with igraph representation of
+#' bipartite networks, \code{TRUE} for judges and \code{FALSE} for judgments.
+#'
+#' @docType data
+#' @name judge_net_bp
+#' @keywords datasets
+#'
+#' @format
+#' Object of class igraph of size 1189, undirected, bipartite.
+#'
+#' @source
+#' Own calculation based on \href{https://saos-test.icm.edu.pl}{SAOS}.
+#' Originally published in the \code{isnar} package at \href{https://github.com/mbojan/isnar}{isnar}.
+#'
+NULL
+
+
+
+
+
+
+
+#' Louisiana political preferences
+#'
+#' Louisiana political preferences
+#'
+#' These data come from a study on the determinants of presidential
+#' voting behavior in the parishes of Louisiana in 1960.
+#' Here, the dependent variable of interest is the percentage of the voting
+#' electorate who support particular Democratic presidential candidates.
+#'
+#' Several dimensions that are important characteristics of Louisiana parishes
+#' include percentage black, percentage Catholic, the
+#' percentage black political equality, and the percentage urban.
+#' Each of these variables, in the aggregate, can be seen as predictors of
+#' electoral turnout and partisan electoral behavior in presidential elections.
+#'
+#' The network represents contiguity between the counties.
+#'
+#' @keywords datasets
+#' @format A data frame with 64 vertices and 302 edges. Undirected, unweighted.
+#' @usage data(louis, package = "SNA4DSData")
+#' @docType data
+#' @name louis
+NULL
+
+
+
+
 
 
 #' Northwestern University Facebook network
@@ -212,7 +394,9 @@ NULL
 #' Northwestern University Facebook network, in \code{igraph}-format.
 #'
 #'  A social friendship network extracted from Facebook consisting of people
-#'  (nodes) with edges representing friendship ties.
+#'  (nodes) with edges representing "friendship" ties.
+#'
+#' There are 10567 Facebook users with 488336 friendship edges between them.
 #'
 #' @source \url{http://networkrepository.com/socfb-Northwestern25.php}
 #' @references
@@ -226,7 +410,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 10567 vertices and 488336 edges. Undirected, unweighted.
-#' @usage data(northwestern)
+#' @usage data(northwestern, package = "SNA4DSData")
 #' @docType data
 #' @name northwestern
 NULL
@@ -239,6 +423,10 @@ NULL
 #' routers network
 #'
 #' routers network, in \code{igraph}-format. The network is known as RL-CAIDA.
+#' This represents the structure of the internet (well, a snapshot of a
+#' small part of it).
+#'
+#' 190914 routers linked by 607610 undirected edges.
 #'
 #' @source \url{http://networkrepository.com/tech-RL-caida.php}
 #' @references
@@ -252,7 +440,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 190914 vertices and 607610 edges. Undirected, unweighted.
-#' @usage data(routers)
+#' @usage data(routers, package = "SNA4DSData")
 #' @docType data
 #' @name routers
 NULL
@@ -276,7 +464,7 @@ NULL
 #' Most of the present data are retrospective, collected after the breakup
 #' occurred. They concern a period during which a new cohort entered the
 #' monastery near the end of the study but before the major conflict began.
-#' The exceptions are "liking" data gathered at three times: SAMPLK1 to SAMPLK3 -
+#' The exceptions are "liking" data gathered at three times: SAMPLK1 to SAMPLK3
 #' that reflect changes in group sentiment over time (SAMPLK3 was collected in
 #' the same wave as the data described below). Information about the senior
 #' monks was not included.
@@ -304,7 +492,7 @@ NULL
 #'
 #' Sampson, S., 1969, Crisis in a cloister, Unpublished doctoral dissertation, Cornell University.
 #'
-#' @usage data(Sampson)
+#' @usage data(Sampson, package = "SNA4DSData")
 #' @docType data
 #' @name Sampson
 NULL
@@ -325,15 +513,15 @@ NULL
 #' users of the Twitter social media platform in the six weeks prior to the 2010
 #' Congressional midterm elections. This network is particularly interesting
 #' because one mode of communication, retweets, segregates users into two
-#' politically homogeneous communities of likeminded individuals, while mentions
+#' politically homogeneous communities of like-minded individuals, while mentions
 #' form a bridge between the two communities over which users are exposed to
 #' people and information they would not likely select ahead of time.
 #'
 #' Data Source
 #'
-#' The present analysis leverages data collected from the Twitter ‘gardenhose’
+#' The present analysis leverages data collected from the Twitter (gardenhose
 #' API (dev.twitter.com/pages/ streaming_api) between September 14th and
-#' November 1st, 2010 — the run-up to the November 4th U.S. congressional
+#' November 1st, 2010, the run-up to the November 4th U.S. congressional
 #' midterm elections. During the six weeks of data collection we observed
 #' approximately 355 million tweets.
 #'
@@ -343,8 +531,8 @@ NULL
 #' politically relevant hashtag. To identify an appropriate set of political
 #' hashtags and to avoid intro- ducing bias into the sample, we performed a
 #' simple tag co-occurrence discovery procedure. We began by seeding our sample
-#' with the two most popular political hashtags, #p2 (“Progressives 2.0”) and
-#' #tcot (“Top Conservatives on Twitter”). For each seed we identified the set
+#' with the two most popular political hashtags, #p2 (Progressives 2.0) and
+#' #tcot (Top Conservatives on Twitter). For each seed we identified the set
 #' of hashtags with which it co-occurred in at least one tweet, and ranked the
 #' results using the Jaccard coefficient. Thus, when the tweets in which both
 #' seed and hashtag occur make up a large portion of the tweets in which either
@@ -361,7 +549,7 @@ NULL
 #' indicating that information has propagated from A to B. In the mention
 #' network an edge runs from A to B if A mentions B in a tweet, indicating that
 #' information may have propagated from A to B (a tweet mentioning B is visible
-#' in B’s timeline). Both networks therefore represent potential pathways for
+#' in B's timeline). Both networks therefore represent potential pathways for
 #' information to flow between users.
 #'
 #' The retweet network consists of 23,766 non-isolated nodes among a total of
@@ -378,7 +566,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 22405 vertices and 77920 edges. Directed, unweighted.
-#' @usage data(twitter)
+#' @usage data(twitter, package = "SNA4DSData")
 #' @docType data
 #' @name twitter
 NULL
@@ -398,7 +586,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 546 vertices and 2781 edges. Undirected, unweighted.
-#' @usage data(us_air)
+#' @usage data(us_air, package = "SNA4DSData")
 #' @docType data
 #' @name us_air
 NULL
@@ -416,7 +604,7 @@ NULL
 #'
 #' @keywords datasets
 #' @format A data frame with 3179 vertices and 18617 edges. Undirected, unweighted.
-#' @usage data(world_air)
+#' @usage data(world_air, package = "SNA4DSData")
 #' @docType data
 #' @name world_air
 NULL
@@ -427,7 +615,13 @@ NULL
 #'
 #' Yeast network
 #'
+<<<<<<< HEAD
 #' Yeast network, in \code{igraph}-format.
+=======
+#' Yeast protein network, in \code{igraph}-format, describing interacting proteins.
+#'
+#' There are 1870 proteins with 4480 interactions.
+>>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #'
 #' @keywords datasets
 #' @format A data frame with 1870 vertices and 4480 edges. Undirected, unweighted.
@@ -436,7 +630,7 @@ NULL
 #' Jeong, H. and Mason, S.P. and Barabasi, A.L. and Oltvai, Z.N., 2001,
 #' Lethality and centrality in protein networks, arXiv preprint cond-mat0105306.
 #'
-#' @usage data(yeast)
+#' @usage data(yeast, package = "SNA4DSData")
 #' @docType data
 #' @name yeast
 NULL

@@ -11,13 +11,15 @@ A data frame with 1870 vertices and 4480 edges. Undirected, unweighted.
 \url{http://networkrepository.com/bio-yeast-protein-inter.php}
 }
 \usage{
-data(yeast)
+data(yeast, package = "SNA4DSData")
 }
 \description{
 Yeast network
 }
 \details{
-Yeast network, in \code{igraph}-format.
+Yeast protein network, in \code{igraph}-format, describing interacting proteins.
+
+There are 1870 proteins with 4480 interactions.
 }
 \references{
 Jeong, H. and Mason, S.P. and Barabasi, A.L. and Oltvai, Z.N., 2001,

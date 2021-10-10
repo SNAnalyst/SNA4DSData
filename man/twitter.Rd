@@ -11,7 +11,7 @@ A data frame with 22405 vertices and 77920 edges. Directed, unweighted.
 \url{http://carl.cs.indiana.edu/data/icwsm/icwsm_polarization.zip}
 }
 \usage{
-data(twitter)
+data(twitter, package = "SNA4DSData")
 }
 \description{
 twitter network
@@ -27,15 +27,15 @@ This dataset describes three networks of political communication between
 users of the Twitter social media platform in the six weeks prior to the 2010
 Congressional midterm elections. This network is particularly interesting
 because one mode of communication, retweets, segregates users into two
-politically homogeneous communities of likeminded individuals, while mentions
+politically homogeneous communities of like-minded individuals, while mentions
 form a bridge between the two communities over which users are exposed to
 people and information they would not likely select ahead of time.
 
 Data Source
 
-The present analysis leverages data collected from the Twitter ‘gardenhose’
+The present analysis leverages data collected from the Twitter (gardenhose
 API (dev.twitter.com/pages/ streaming_api) between September 14th and
-November 1st, 2010 — the run-up to the November 4th U.S. congressional
+November 1st, 2010, the run-up to the November 4th U.S. congressional
 midterm elections. During the six weeks of data collection we observed
 approximately 355 million tweets.
 
@@ -45,8 +45,8 @@ Let us define a political communication as any tweet containing at least one
 politically relevant hashtag. To identify an appropriate set of political
 hashtags and to avoid intro- ducing bias into the sample, we performed a
 simple tag co-occurrence discovery procedure. We began by seeding our sample
-with the two most popular political hashtags, #p2 (“Progressives 2.0”) and
-#tcot (“Top Conservatives on Twitter”). For each seed we identified the set
+with the two most popular political hashtags, #p2 (Progressives 2.0) and
+#tcot (Top Conservatives on Twitter). For each seed we identified the set
 of hashtags with which it co-occurred in at least one tweet, and ranked the
 results using the Jaccard coefficient. Thus, when the tweets in which both
 seed and hashtag occur make up a large portion of the tweets in which either
@@ -63,7 +63,7 @@ representing user B if B retweets content originally broadcast by A,
 indicating that information has propagated from A to B. In the mention
 network an edge runs from A to B if A mentions B in a tweet, indicating that
 information may have propagated from A to B (a tweet mentioning B is visible
-in B’s timeline). Both networks therefore represent potential pathways for
+in B's timeline). Both networks therefore represent potential pathways for
 information to flow between users.
 
 The retweet network consists of 23,766 non-isolated nodes among a total of

@@ -11,13 +11,18 @@ A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
 \url{http://networkrepository.com/eco-everglades.php}
 }
 \usage{
-data(everglades)
+data(everglades, package = "SNA4DSData")
 }
 \description{
 everglades network
 }
 \details{
 everglades network, in \code{igraph}-format.
+This is a foodweb of species in the Florida Everglades.
+A directed link goes from a prey to a predator species.
+The weight of an edge represents the energy flux between the two species.
+
+There are 69 nodes and 915 edges.
 
 eco-florida also exists and is slightly larger
 }

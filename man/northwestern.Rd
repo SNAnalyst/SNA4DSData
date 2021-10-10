@@ -11,7 +11,7 @@ A data frame with 10567 vertices and 488336 edges. Undirected, unweighted.
 \url{http://networkrepository.com/socfb-Northwestern25.php}
 }
 \usage{
-data(northwestern)
+data(northwestern, package = "SNA4DSData")
 }
 \description{
 Northwestern University Facebook network
@@ -20,7 +20,9 @@ Northwestern University Facebook network
 Northwestern University Facebook network, in \code{igraph}-format.
 
 A social friendship network extracted from Facebook consisting of people
-(nodes) with edges representing friendship ties.
+(nodes) with edges representing "friendship" ties.
+
+There are 10567 Facebook users with 488336 friendship edges between them.
 }
 \references{
 Traud, Amanda L and Mucha, Peter J and Porter, Mason A,

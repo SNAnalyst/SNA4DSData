@@ -8,12 +8,15 @@
 A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
 }
 \usage{
-data(enwiki)
+data(enwiki, package = "SNA4DSData")
 }
 \description{
 enwiki network
 }
 \details{
 enwiki network, in \code{igraph}-format.
+The nodes are Wikipedia articles about math in the English language.
+Only links between Wikipedia articles are considered, links with external
+articles are disregarded.
 }
 \keyword{datasets}

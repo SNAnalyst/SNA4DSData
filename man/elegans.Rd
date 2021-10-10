@@ -11,13 +11,15 @@ A data frame with 297 vertices and 2344 edges. Directed, Weighted.
 \url{http://networkrepository.com/celegansneural.php}
 }
 \usage{
-data(elegans)
+data(elegans, package = "SNA4DSData")
 }
 \description{
 elegans network
 }
 \details{
 elegans network, in \code{igraph}-format.
+Neural network of the nematode Caenorhabditis Elegans.
+So, nodes are neurons, links are outgoing or incoming synapses.
 }
 \references{
 White JG, Southgate E, Thomson JN and S Brenner, 1986,

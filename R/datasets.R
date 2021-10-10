@@ -1,9 +1,31 @@
 
+#' Data Science Students
+#'
+#' DSstudents
+#'
+#' DSstudents, in \code{igraph}-format.
+#'
+#' @usage data(DSstudents)
+#' @docType data
+#' @name DSstudents
+#' @keywords datasets
+#' @format An igraph object with 81 nodes and 151 edges. Directed, Weighted.
+#' @source Data Collected during the SNA4DS course 2021 and modified for anonymization
+#' @references
+#' Zucca, C., 2021, Data Science Students -SNA4DS 2021
+NULL
+
+
+
+
+
+
+
 #' elegans network data
 #'
 #' elegans network
 #'
-#' elegans network, in \code{igraph}-format. 
+#' elegans network, in \code{igraph}-format.
 #'
 #' @usage data(elegans)
 #' @docType data
@@ -12,8 +34,8 @@
 #' @format A data frame with 297 vertices and 2344 edges. Directed, Weighted.
 #' @source \url{http://networkrepository.com/celegansneural.php}
 #' @references
-#' White JG, Southgate E, Thomson JN and S Brenner, 1986, 
-#' The structure of the nervous system of the nematode Caenorhabditis elegans, 
+#' White JG, Southgate E, Thomson JN and S Brenner, 1986,
+#' The structure of the nervous system of the nematode Caenorhabditis elegans,
 #' Philos Trans R Soc Lond B Biol Sci., pages 1-340.
 NULL
 
@@ -27,7 +49,7 @@ NULL
 #'
 #' enron network
 #'
-#' enron network, in \code{igraph}-format. 
+#' enron network, in \code{igraph}-format.
 #'
 #' The network consists of 321917 emails sent between employees of Enron between
 #' 1999 and 2003. Nodes in the network are individual employees and edges are
@@ -45,11 +67,11 @@ NULL
 #' @name enron
 #' @docType data
 #' @source \url{http://konect.cc/networks/enron/} and \url{http://www.cs.cmu.edu/~enron/}
-#' @references, 
-#' Jerome Kunegis, 2013, 
+#' @references,
+#' Jerome Kunegis, 2013,
 #' KONECT – The Koblenz Network Collection,
 #' Proc. Int. Conf. on World Wide Web Companion, pages 1343-1350.
-#' 
+#'
 #' B. Klimmt, Y. Yang, 2004, Introducing the Enron corpus,
 #' Proc. Eur. Conf. on Mach. Learn., pages 217–-226.
 #'
@@ -109,7 +131,7 @@ NULL
 #'
 #' ia_enron network
 #'
-#' ia_enron network, in \code{igraph}-format. 
+#' ia_enron network, in \code{igraph}-format.
 #'
 #' @format 143 vertices and 622 edges. Directed, Weighted.
 #' @keywords datasets
@@ -124,7 +146,7 @@ NULL
 #'
 #' enwiki network
 #'
-#' enwiki network, in \code{igraph}-format. 
+#' enwiki network, in \code{igraph}-format.
 #'
 #' @keywords datasets
 #' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
@@ -140,17 +162,17 @@ NULL
 #'
 #' everglades network
 #'
-#' everglades network, in \code{igraph}-format. 
+#' everglades network, in \code{igraph}-format.
 #'
 #' eco-florida also exists and is slightly larger
 #'
 #' @source \url{http://networkrepository.com/eco-everglades.php}
 #' @references
-#' Ulanowicz, Robert E and DeAngelis, Donald L., 1998, 
-#' Network analysis of trophic dynamics in south florida ecosystems, 
+#' Ulanowicz, Robert E and DeAngelis, Donald L., 1998,
+#' Network analysis of trophic dynamics in south florida ecosystems,
 #' FY97: The Florida Bay Ecosystem, 20688-20038.
-#' 
-#' Melian, Carlos J and Bascompte, Jordi, 2004, 
+#'
+#' Melian, Carlos J and Bascompte, Jordi, 2004,
 #' Food web cohesion, Ecology, 85 (2): 352-358.
 #'
 #' @keywords datasets
@@ -166,7 +188,7 @@ NULL
 #'
 #' imdb costars network
 #'
-#' imdb costars network, in \code{igraph}-format. 
+#' imdb costars network, in \code{igraph}-format.
 
 #' An edge is this network is defined as the actors being part of the same movie.
 #' The edge weight attribute reflects the number of collaborations.
@@ -187,19 +209,19 @@ NULL
 #'
 #' Northwestern University Facebook network
 #'
-#' Northwestern University Facebook network, in \code{igraph}-format. 
+#' Northwestern University Facebook network, in \code{igraph}-format.
 #'
 #'  A social friendship network extracted from Facebook consisting of people
 #'  (nodes) with edges representing friendship ties.
 #'
 #' @source \url{http://networkrepository.com/socfb-Northwestern25.php}
 #' @references
-#' Traud, Amanda L and Mucha, Peter J and Porter, Mason A, 
-#' Social structure of Facebook networks, 2012, 
+#' Traud, Amanda L and Mucha, Peter J and Porter, Mason A,
+#' Social structure of Facebook networks, 2012,
 #' Phys. A, August, 16, 391: 4165-4180.
-#' 
+#'
 #' Traud, Amanda L and Kelsic, Eric D and Mucha, Peter J and Porter, Mason A, 2011,
-#' Comparing Community Structure to Characteristics in Online Collegiate Social Networks, 
+#' Comparing Community Structure to Characteristics in Online Collegiate Social Networks,
 #' SIAM Rev., 53 (3): 526--543
 #'
 #' @keywords datasets
@@ -220,8 +242,8 @@ NULL
 #'
 #' @source \url{http://networkrepository.com/tech-RL-caida.php}
 #' @references
-#' Ryan A. Rossi, Sonia Fahmy, and Nilothpal Talukder, 2013, 
-#' A Multi-Level Approach for Evaluating Internet Topology Generators, 
+#' Ryan A. Rossi, Sonia Fahmy, and Nilothpal Talukder, 2013,
+#' A Multi-Level Approach for Evaluating Internet Topology Generators,
 #' IFIP Networking, pages 1-9.
 #'
 #' Spring, Neil and Mahajan, Ratul and Wetherall, David, 2002,
@@ -277,7 +299,7 @@ NULL
 #' of the way the data were collected.
 #' @source \url{http://vlado.fmf.uni-lj.si/pub/networks/data/UciNet/UciData.htm}
 #' @references
-#' Breiger R., Boorman S. and P. Arabie, 1975, 
+#' Breiger R., Boorman S. and P. Arabie, 1975,
 #' An algorithm for clustering relational data with applications to social network analysis and comparison with multidimensional scaling, Journal of Mathematical Psychology, 12: 328-383.
 #'
 #' Sampson, S., 1969, Crisis in a cloister, Unpublished doctoral dissertation, Cornell University.
@@ -405,13 +427,13 @@ NULL
 #'
 #' Yeast network
 #'
-#' Yeast network, in \code{igraph}-format. 
+#' Yeast network, in \code{igraph}-format.
 #'
 #' @keywords datasets
 #' @format A data frame with 1870 vertices and 4480 edges. Undirected, unweighted.
 #' @source \url{http://networkrepository.com/bio-yeast-protein-inter.php}
 #' @references
-#' Jeong, H. and Mason, S.P. and Barabasi, A.L. and Oltvai, Z.N., 2001, 
+#' Jeong, H. and Mason, S.P. and Barabasi, A.L. and Oltvai, Z.N., 2001,
 #' Lethality and centrality in protein networks, arXiv preprint cond-mat0105306.
 #'
 #' @usage data(yeast)

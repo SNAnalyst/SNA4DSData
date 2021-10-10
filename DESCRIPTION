@@ -1,10 +1,6 @@
 Package: SNA4DSData
 Title: Datasets for the SNA4DS course
-<<<<<<< HEAD
-Version: 0.9.9100
-=======
-Version: 0.9.904
->>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
+Version: 0.9.905
 Authors@R:
 	c(person(given = "Roger",
 					family = "Leenders",

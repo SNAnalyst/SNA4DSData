@@ -1,20 +1,5 @@
 
-<<<<<<< HEAD
-#' Data Science Students
-#'
-#' DSstudents
-#'
-#' DSstudents, in \code{igraph}-format.
-#'
-#' @usage data(DSstudents)
-#' @docType data
-#' @name DSstudents
-#' @keywords datasets
-#' @format An igraph object with 81 nodes and 151 edges. Directed, Weighted.
-#' @source Data Collected during the SNA4DS course 2021 and modified for anonymization
-#' @references
-#' Zucca, C., 2021, Data Science Students -SNA4DS 2021
-=======
+
 
 
 #' blogosphere
@@ -53,28 +38,34 @@
 #' election: Divided they blog, 2005, LinkeKDD '05: Proceedings of the 3rd
 #' international workshop op Link discovery.
 #' @keywords datasets
->>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 NULL
 
 
+#' Data Science Students
+#'
+#' DSstudents
+#'
+#' DSstudents, in \code{igraph}-format.
+#'
+#' @usage data(DSstudents)
+#' @docType data
+#' @name DSstudents
+#' @keywords datasets
+#' @format An igraph object with 81 nodes and 151 edges. Directed, Weighted.
+#' @source Data Collected during the SNA4DS course 2021 and modified for anonymization
+#' @references
+#' Zucca, C., 2021, Data Science Students -SNA4DS 2021
+#' @keywords datasets
+NULL
 
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #' elegans network data
 #'
 #' elegans network
 #'
 #' elegans network, in \code{igraph}-format.
-<<<<<<< HEAD
-=======
 #' Neural network of the nematode Caenorhabditis Elegans.
 #' So, nodes are neurons, links are outgoing or incoming synapses.
->>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #'
 #' @usage data(elegans, package = "SNA4DSData")
 #' @docType data
@@ -86,6 +77,7 @@ NULL
 #' White JG, Southgate E, Thomson JN and S Brenner, 1986,
 #' The structure of the nervous system of the nematode Caenorhabditis elegans,
 #' Philos Trans R Soc Lond B Biol Sci., pages 1-340.
+#' @keywords datasets
 NULL
 
 
@@ -118,11 +110,7 @@ NULL
 #' @source \url{http://konect.cc/networks/enron/} and \url{http://www.cs.cmu.edu/~enron/}
 #' @references,
 #' Jerome Kunegis, 2013,
-<<<<<<< HEAD
-#' KONECT – The Koblenz Network Collection,
-=======
 #' KONECT--The Koblenz Network Collection,
->>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #' Proc. Int. Conf. on World Wide Web Companion, pages 1343-1350.
 #'
 #' B. Klimmt, Y. Yang, 2004, Introducing the Enron corpus,
@@ -234,12 +222,9 @@ NULL
 #' enwiki network
 #'
 #' enwiki network, in \code{igraph}-format.
-<<<<<<< HEAD
-=======
 #' The nodes are Wikipedia articles about math in the English language.
 #' Only links between Wikipedia articles are considered, links with external
 #' articles are disregarded.
->>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #'
 #' @keywords datasets
 #' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
@@ -256,14 +241,11 @@ NULL
 #' everglades network
 #'
 #' everglades network, in \code{igraph}-format.
-<<<<<<< HEAD
-=======
 #' This is a foodweb of species in the Florida Everglades.
 #' A directed link goes from a prey to a predator species.
 #' The weight of an edge represents the energy flux between the two species.
 #'
 #' There are 69 nodes and 915 edges.
->>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #'
 #' eco-florida also exists and is slightly larger
 #'
@@ -615,13 +597,9 @@ NULL
 #'
 #' Yeast network
 #'
-<<<<<<< HEAD
-#' Yeast network, in \code{igraph}-format.
-=======
 #' Yeast protein network, in \code{igraph}-format, describing interacting proteins.
 #'
 #' There are 1870 proteins with 4480 interactions.
->>>>>>> 4391a81eb30eec24eb3be0cb5e971294d930444f
 #'
 #' @keywords datasets
 #' @format A data frame with 1870 vertices and 4480 edges. Undirected, unweighted.

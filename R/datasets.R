@@ -119,7 +119,7 @@ NULL
 #' @docType data
 #' @name DSstudents
 #' @keywords datasets
-#' @format An igraph object with 81 nodes and 151 edges. Directed, Weighted.
+#' @format An igraph object with 81 nodes and 148 edges. Directed, Weighted.
 #' @source Data Collected during the SNA4DS course 2021 and modified for anonymization
 #' @references
 #' Zucca, C., 2021, Data Science Students -SNA4DS 2021

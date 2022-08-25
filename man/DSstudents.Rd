@@ -5,7 +5,7 @@
 \alias{DSstudents}
 \title{Data Science Students}
 \format{
-An igraph object with 81 nodes and 151 edges. Directed, Weighted.
+An igraph object with 81 nodes and 148 edges. Directed, Weighted.
 }
 \source{
 Data Collected during the SNA4DS course 2021 and modified for anonymization

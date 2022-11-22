@@ -1,6 +1,6 @@
 Package: SNA4DSData
 Title: Datasets for the SNA4DS course
-Version: 0.9.91
+Version: 0.9.92
 Authors@R:
 	c(person(given = "Roger",
 					family = "Leenders",
@@ -18,4 +18,4 @@ Encoding: UTF-8
 LazyData: true
 LazyDataCompression: bzip2
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.2

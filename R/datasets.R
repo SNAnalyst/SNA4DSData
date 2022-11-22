@@ -270,6 +270,114 @@ NULL
 NULL
 
 
+
+
+#' Friendship
+#'
+#' Longitudinal classroom friendship network and behavior (Andrea Knecht)
+#' 
+#' The Knecht dataset contains the friendship network of 26 pupils in a Dutch
+#' school class measured at four time points along with several demographic and
+#' behavioral covariates like age, sex, ethnicity, religion, delinquency,
+#' alcohol consumption, primary school co-attendance, and school advice. Some of
+#' these covariates are constant while others vary over time. The full dataset
+#' (see Knecht 2006 and 2008) contains a large number of classrooms while the
+#' dataset presented here is an excerpt based on one single classroom. This
+#' excerpt was first used in a tutorial for the software Siena and the
+#' corresponding R package RSiena (Snijders, Steglich and van de Bunt 2010). The
+#' following description was largely copied from the original data description
+#' provided on the homepage of the Siena project (see below for the URL). The
+#' data were collected between September 2003 and June 2004 by Andrea Knecht,
+#' supervised by Chris Baerveldt, at the Department of Sociology of the
+#' University of Utrecht (NL). The entire study is reported in Knecht (2008).
+#' The project was funded by the Netherlands Organisation for Scientific
+#' Research NWO, grant 401-01-554. The 26 students were followed over their
+#' first year at secondary school during which friendship networks as well as
+#' other data were assessed at four time points at intervals of three months.
+#' There were 17 girls and 9 boys in the class, aged 11–13 at the beginning of
+#' the school year. Network data were assessed by asking students to indicate up
+#' to twelve classmates which they considered good friends. Delinquency is
+#' defined as a rounded average over four types of minor delinquency (stealing,
+#' vandalism, graffiti, and fighting), measured in each of the four waves of
+#' data collection. The five-point scale ranged from ‘never’ to 'more than 10
+#' times', and the distribution is highly skewed. In a range of 1–5, the mode
+#' was 1 at all four waves, the average rose over time from 1.4 to 2.0, and the
+#' value 5 was never observed.
+#' 
+#' The data were originally included in the `xergm.common` package. 
+#' The version in the `SNA4DSData` package has been cleaned and made ready for 
+#' use with the `btergm` package. This includes rhw imputation of NA's and 
+#' removal of absent nodes.
+#' 
+#' @format 
+#' \itemize{
+#' \item friendship is a list of `network` objects at four time points, 
+#' containing friendship nominations of the column node by the row node. 
+#' The following values are used: 0 = no, 1 = yes, NA = missing, 10 = not a 
+#' member of the classroom (structural zero).
+#' \item demographics a data frame with 26 rows (the pupils) and four demographic variables about the pupils:
+#' - \code{sex} (1 = girl, 2 = boy)
+#' - age (in years)
+#' - ethnicity (1 = Dutch, 2 = other, 0 = missing)
+#' - religion (1 = Christian, 2 = non-religious, 3 = non-Christian religion, 0 = missing)
+#' \item primary a 26 x 26 matrix indicating whether two pupils attended the same primary school. 0 = no, 1 = yes
+#' \item delinquency a data frame with 26 rows (the pupils) and four columns 
+#' (the four time steps). It contains the rounded average of four items 
+#' (stealing, vandalizing, fighting, graffiti). 
+#' Categories: frequency over last three months, 1 = never, 2 = once, 3 = 2–4 times, 
+#' 4 = 5–10 times, 5 = more than 10 times; 0 = missing.
+#' \item alcohol a data frame with 26 rows (the pupils) and 3 columns 
+#' (waves 2, 3, and 4). It contains data on alcohol use (“How often did you 
+#' drink alcohol with friends in the last three months?”). 
+#' Categories: 1 = never, 2 = once, 3 = 2–4 times, 4 = 5–10 times, 
+#' 5 = more than 10 times; 0 = missing.
+#' \item advice a data frame with one variable, “school advice”, the assessment 
+#' given at the end of primary school about the school capabilities of the pupil 
+#' (4 = low, 8 = high, 0 = missing)
+#' }
+#'
+#' @source
+#' The data were gathered by Andrea Knecht, as part of her PhD research, 
+#' building on methods developed by Chris Baerveldt, initiator and supervisor of 
+#' the project. The project is funded by the Netherlands Organisation for 
+#' Scientific Research NWO, grant 401-01-554, and is part of the research 
+#' program “Dynamics of Networks and Behavior” with principle investigator 
+#' Tom A. B. Snijders.
+#' 
+#' Complete original data: https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:48665
+#' 
+#' This excerpt in Siena format: http://www.stats.ox.ac.uk/~snijders/siena/klas12b.zip
+#' 
+#' Siena dataset description: http://www.stats.ox.ac.uk/~snijders/siena/tutorial2010_data.htm
+#' 
+#' The data are included from the `xergm.common` package. 
+#' 
+#' @references 
+#' 
+#' Knecht, Andrea (2006): Networks and Actor Attributes in Early Adolescence. Utrecht, The Netherlands Research School ICS, Department of Sociology, Utrecht University. (ICS-Codebook no. 61).
+#' 
+#' Knecht, Andrea (2008): Friendship Selection and Friends' Influence. Dynamics of Networks and Actor Attributes in Early Adolescence. PhD Dissertation, University of Utrecht. http://dspace.library.uu.nl/bitstream/handle/1874/25950/full.pdf.
+#' 
+#' Knecht, Andrea, Tom A. B. Snijders, Chris Baerveldt, Christian E. G. Steglich, and Werner Raub (2010): Friendship and Delinquency: Selection and Influence Processes in Early Adolescence. Social Development 19(3): 494–514. http://dx.doi.org/10.1111/j.1467-9507.2009.00564.x.
+#' 
+#' Leifeld, Philip and Skyler J. Cranmer (2014): A Theoretical and Empirical Comparison of the Temporal Exponential Random Graph Model and the Stochastic Actor-Oriented Model. Paper presented at the 7th Political Networks Conference, McGill University, Montreal, Canada, May 30. http://arxiv.org/abs/1506.06696.
+#' 
+#' Leifeld, Philip, Skyler J. Cranmer and Bruce A. Desmarais (2017): Temporal Exponential Random Graph Models with btergm: Estimation and Bootstrap Confidence Intervals. Journal of Statistical Software.
+#' 
+#' Snijders, Tom A. B., Christian E. G. Steglich, and Gerhard G. van de Bunt (2010): Introduction to Actor-Based Models for Network Dynamics. Social Networks 32: 44–60. http://dx.doi.org/10.1016/j.socnet.2009.02.004.
+#' 
+#' Steglich, Christian E. G. and Andrea Knecht (2009): Die statistische Analyse dynamischer Netzwerkdaten. In: Stegbauer, Christian and Roger Haeussling (editors), Handbuch der Netzwerkforschung, Wiesbaden: Verlag fuer Sozialwissenschaften.
+#'
+#' @usage data(friendship, package = "SNA4DSData")
+#' @docType data
+#' @name friendship
+#' @keywords datasets
+#' @format A list containing four \code{network} networks and separate \code{advice},
+#' \code{alcohol}, \code{delinquincy}, \code{demographics}, and \code{primary} vectors.
+NULL
+
+
+
 #' ia_enron network data
 #'
 #' ia_enron network

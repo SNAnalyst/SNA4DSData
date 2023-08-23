@@ -1,5 +1,6 @@
 
 
+### alliences ----
 
 #' alliances
 #'
@@ -68,7 +69,7 @@
 NULL
 
 
-
+### blogosphere ----
 
 #' blogosphere
 #'
@@ -109,6 +110,8 @@ NULL
 NULL
 
 
+### DSstudents ----
+
 #' Data Science Students
 #'
 #' DSstudents
@@ -126,6 +129,9 @@ NULL
 #' @keywords datasets
 NULL
 
+
+
+### elegans ----
 
 #' elegans network data
 #'
@@ -152,7 +158,7 @@ NULL
 
 
 
-
+### enron  ----
 
 #' enron network data
 #'
@@ -189,6 +195,63 @@ NULL
 
 
 
+### enwiki ----
+
+#' enwiki network data
+#'
+#' enwiki network
+#'
+#' enwiki network, in \code{igraph}-format.
+#' The nodes are Wikipedia articles about math in the English language.
+#' Only links between Wikipedia articles are considered, links with external
+#' articles are disregarded.
+#'
+#' @keywords datasets
+#' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
+#' @usage data(enwiki, package = "SNA4DSData")
+#' @docType data
+#' @name enwiki
+NULL
+
+
+
+
+### everglades ----
+
+#' everglades network data
+#'
+#' everglades network
+#'
+#' everglades network, in \code{igraph}-format.
+#' This is a foodweb of species in the Florida Everglades.
+#' A directed link goes from a prey to a predator species.
+#' The weight of an edge represents the energy flux between the two species.
+#'
+#' There are 69 nodes and 915 edges.
+#'
+#' eco-florida also exists and is slightly larger
+#'
+#' @source \url{http://networkrepository.com/eco-everglades.php}
+#' @references
+#' Ulanowicz, Robert E and DeAngelis, Donald L., 1998,
+#' Network analysis of trophic dynamics in south florida ecosystems,
+#' FY97: The Florida Bay Ecosystem, 20688-20038.
+#'
+#' Melian, Carlos J and Bascompte, Jordi, 2004,
+#' Food web cohesion, Ecology, 85 (2): 352-358.
+#'
+#' @keywords datasets
+#' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
+#' @usage data(everglades, package = "SNA4DSData")
+#' @docType data
+#' @name everglades
+NULL
+
+
+
+
+### fifa2006 ----
+
 #' FIFA 2006 committee membership network
 #'
 #' FIFA committee membership network in 2006
@@ -205,6 +268,10 @@ NULL
 #' @docType data
 #' @keywords fifa2006
 NULL
+
+
+
+### fifa 2015 ----
 
 #' FIFA 2015 committee membership network
 #'
@@ -224,6 +291,9 @@ NULL
 NULL
 
 
+
+
+### florentine ----
 
 #' Florentine families
 #'
@@ -271,6 +341,7 @@ NULL
 
 
 
+### friendship ----
 
 #' Friendship
 #'
@@ -378,6 +449,74 @@ NULL
 
 
 
+
+### huk ----
+
+#' Huk rebellion network data
+#'
+#' Huk rebellion network
+#' 
+#' Data on the Huk insurgency in the Philippines studied by 
+#' Mitchell (1969) and Doreian and Hummon (1976). 
+#' The list of exogenous variables involved is: 
+#' the percentage of the population speaking the Pampangan dialect, P; 
+#' farmers as a percentage of the population, FMP; owners as a percentage of 
+#' the population, OWN; percentage of cultivated land given to sugar production, 
+#' SGR; presence of mountains (a dummy), 
+#' MNT; and presence of swamps, SWP (another dummy variable).
+#' 
+#' In the dataset, the exogenous variables "FMP" "OWN" "SGR" "MNT" "SWP" have 
+#' all been premultiplied by "P" and it is no longer possible to uncover their 
+#' original values. Hence, the expgenous variables in the dataset are 
+#' all prefixed with "P". 
+#' 
+#' The dependent variable (y) of interest is the level of Huk control 
+#' operationalized as the percentage of barrios in a municipality under the 
+#' control of the Huks. Huk control was located, for the
+#' most part, in those areas of central Luzon that were Pampangan
+#' in the sense that this ethnic group was dominant in those areas
+#' and that the majority of the population spoke that particular 
+#' dialect. According to Mitchell (1969), there has been a historical 
+#' cleavage between Pampangans and other ethnic groups. 
+#' Further, this cleavage persisted, as there was a strong element of mistrust
+#' between the Pampangans and other neighboring ethnic groups.
+#' 
+#' The entries of W lie between zero and one (inclusive, although w == 1 
+#' is only possible for a pair of mutually adjacent, but otherwise disconnected, 
+#' areas) and are proportions based upon the number of other areas adjacent 
+#' to a specific area. This is represented in the W matrix. The dataset also 
+#' includes a row-standardized version of W, called \code{hukWstd}.  
+#' 
+#' The data come from Doreian (1980), see Table 1 therein which can be 
+#' replicated with this dataset. Also, the above documentation largely comes 
+#' from that paper. Note that Doreian (1980) uses the non-standardized W-matrix.
+#' For the code to replicate these models, see the 
+#' documentation of \code{link\[snafun]{stat_nam}}.
+#'
+#' There are 57 nodes and 286 edges.
+#'
+#' @references
+#' Doreian, P. (1980). Linear Models with Spatially Distributed Data. 
+#' Sociological Methods & Research, 9(1), 29-60. 
+#' 
+#' Doreian, P. & N,. Hummon (1976). Modeling Social Processes. New York: Elsevier.
+#' 
+#' Mitchell, E. J. (1969). Some Econometrics of the Huk Rebellion. 
+#' American Political Science Review, 63, 1159-1171. 
+#'
+#' @keywords datasets
+#' @format A data frame (\code{hukYX}) with the dependent and exogenous variables, 
+#' a matrix (\code{hukW}) with the spatial weights and a row-standardized 
+#' version (\code{hukWstd}). 57 vertices with 286 edges. Undirected, weighted.
+#' @usage data(huk, package = "SNA4DSData")
+#' @docType data
+#' @name huk
+NULL
+
+
+
+### ia_enron ----
+
 #' ia_enron network data
 #'
 #' ia_enron network
@@ -393,55 +532,9 @@ NULL
 
 
 
-#' enwiki network data
-#'
-#' enwiki network
-#'
-#' enwiki network, in \code{igraph}-format.
-#' The nodes are Wikipedia articles about math in the English language.
-#' Only links between Wikipedia articles are considered, links with external
-#' articles are disregarded.
-#'
-#' @keywords datasets
-#' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
-#' @usage data(enwiki, package = "SNA4DSData")
-#' @docType data
-#' @name enwiki
-NULL
 
 
-
-
-#' everglades network data
-#'
-#' everglades network
-#'
-#' everglades network, in \code{igraph}-format.
-#' This is a foodweb of species in the Florida Everglades.
-#' A directed link goes from a prey to a predator species.
-#' The weight of an edge represents the energy flux between the two species.
-#'
-#' There are 69 nodes and 915 edges.
-#'
-#' eco-florida also exists and is slightly larger
-#'
-#' @source \url{http://networkrepository.com/eco-everglades.php}
-#' @references
-#' Ulanowicz, Robert E and DeAngelis, Donald L., 1998,
-#' Network analysis of trophic dynamics in south florida ecosystems,
-#' FY97: The Florida Bay Ecosystem, 20688-20038.
-#'
-#' Melian, Carlos J and Bascompte, Jordi, 2004,
-#' Food web cohesion, Ecology, 85 (2): 352-358.
-#'
-#' @keywords datasets
-#' @format A data frame with 15220 vertices with 194103 edges. Directed, Unweighted.
-#' @usage data(everglades, package = "SNA4DSData")
-#' @docType data
-#' @name everglades
-NULL
-
-
+### imdb costars ----
 
 #' imdb costars
 #'
@@ -463,6 +556,9 @@ NULL
 #' @name imdb_costars
 NULL
 
+
+
+### judges ----
 
 #' Judges network
 #'
@@ -486,6 +582,9 @@ NULL
 #'
 NULL
 
+
+
+### judges_net_bp ----
 
 #' Bipartite judges--judgments network
 #'
@@ -515,6 +614,7 @@ NULL
 
 
 
+### louisiana ----
 
 #' Louisiana political preferences
 #'
@@ -542,8 +642,7 @@ NULL
 
 
 
-
-
+### northwestern ----
 
 #' Northwestern University Facebook network
 #'
@@ -574,7 +673,7 @@ NULL
 NULL
 
 
-
+### routers ----
 
 #' routers network
 #'
@@ -605,6 +704,7 @@ NULL
 
 
 
+### sampson ----
 
 #' Sampson monastary network data
 #'
@@ -656,6 +756,8 @@ NULL
 NULL
 
 
+
+### twitter ----
 
 #' twitter network
 #'
@@ -732,6 +834,8 @@ NULL
 
 
 
+### us air ----
+
 #' us air network
 #'
 #' us air network
@@ -752,6 +856,8 @@ NULL
 
 
 
+### world air ----
+
 #' world air network
 #'
 #' world air network
@@ -768,6 +874,8 @@ NULL
 NULL
 
 
+
+### yeast ----
 
 #' yeast network data
 #'
